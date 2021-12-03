@@ -29,5 +29,7 @@ sources:
       - name: PAYMENT
       - name: PURCHASE_ORDER
       - name: PURCHASE_ORDER_LINE_ITEM
+      - name: RECEIPT
+      - name: RECEIPT_LINE_ITEM
 
   
