@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'table',
-  schema= 'XERO',
+  schema= var('target_schema'),
   tags= ["staging", "daily"],
   transient=false
 )

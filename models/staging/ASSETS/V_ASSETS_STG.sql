@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'view',
-  schema= 'XERO',
+  schema= var('target_schema'),
   tags= ["staging","daily"]
 )
 }}
@@ -9,13 +9,13 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('DEMO_XERO','ASSET')}}
+    {{source(var('source_schema'),'ASSET')}}
 ),
 asset_type AS (
   SELECT
   *
   FROM
-    {{source('DEMO_XERO','ASSET_TYPE')}}
+    {{source(var('source_schema'),'ASSET_TYPE')}}
 ),
 rename AS 
 (   

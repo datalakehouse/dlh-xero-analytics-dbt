@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'view',
-  schema= 'XERO',
+  schema= var('target_schema'),
   tags= ["staging", "daily"]
 )
 }}

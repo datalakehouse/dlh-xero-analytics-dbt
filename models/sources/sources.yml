@@ -1,7 +1,9 @@
 version: 2
 
 sources:      
-  - name: DEMO_XERO
+  - name: "{{ var('source_schema')}}"
+    database: "{{ var('source_database')}}"
+    schema: "{{ var('source_schema')}}"
     quoting:
       identifier: true
     tables:

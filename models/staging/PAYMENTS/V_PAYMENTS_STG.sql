@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'view',
-  schema= 'XERO',
+  schema= var('target_schema'),
   tags= ["staging","daily"]
 )
 }}
@@ -9,7 +9,7 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('DEMO_XERO','PAYMENT')}}
+    {{source(var('source_schema'),'PAYMENT')}}
 ),
 account AS (
   SELECT 

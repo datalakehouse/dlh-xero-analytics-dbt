@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'view',
-  schema= 'XERO',
+  schema= var('target_schema'),
   tags= ["staging","daily"]
 )
 }}
@@ -9,19 +9,19 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source('DEMO_XERO','CONTACTS')}}
+    {{source(var('source_schema'),'CONTACTS')}}
 ),
 contact_group_member AS (
   SELECT
   *
   FROM
-    {{source('DEMO_XERO','CONTACT_GROUP_MEMBER')}}
+    {{source(var('source_schema'),'CONTACT_GROUP_MEMBER')}}
 ),
 contact_group AS (
   SELECT
   *
   FROM
-    {{source('DEMO_XERO','CONTACT_GROUP')}}
+    {{source(var('source_schema'),'CONTACT_GROUP')}}
 ),
 branding_theme AS (
   SELECT
