@@ -6,7 +6,6 @@ name: 'dlh_xero'
 version: '0.1.0'
 config-version: 2
 
-
 require-dbt-version: ">=0.21.0"
 
 # This setting configures which "profile" dbt uses for this project.
