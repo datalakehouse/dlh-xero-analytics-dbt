@@ -44,7 +44,7 @@ Include in your packages.yml
 
 ```yaml
 packages:
-  - package: datalakehouse/dlh-xero
+  - package: datalakehouse/dlh_xero
     version: [">=0.1.0"]
 ```
 
