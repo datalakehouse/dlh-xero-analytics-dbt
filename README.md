@@ -12,18 +12,18 @@ The primary ouputs of this package are fact and dimension tables as listed below
 
 |        Type       |        Model       |        Raw tables involved       |
 |:----------------:|:----------------:|----------------|
-|Dimension| W_ACCOUNTS_D       | ACCOUNT|
-|Dimension| W_ASSETS_D         | ASSET<br>ASSET_TYPE |
-|Dimension| W_CURRENCY_D       | Manually built |
-|Dimension| W_CONTACTS_D      | CONTACTS<br>CONTACT_GROUP_MEMBER<br>CONTACT_GROUP|
-|Dimension| W_DATE_D      | Manually built|
-|Dimension| W_EMPLOYEES_D      | EMPLOYEE|
-|Dimension| W_ITEMS_D      | ITEM|
-|Fact| W_JOURNAL_F | ORDER<br>ORDER_LINE_ITEM<br>ORDER_LINE_ITEM_MODIFIER|
-|Fact| W_PAYMENTS_F          | PAYMENT|
-|Fact| W_INVOICES_F          | INVOICE<br>INVOICE_LINE_ITEM|
-|Fact| W_PURCHASE_ORDERS_F          | PURCHASE_ORDER<br>PURCHASE_ORDER_LINE_ITEM|
-|Fact| W_RECEIPTS_F          | RECEIPT<br>RECEIPT_LINE_ITEM|
+|Dimension| W_XER_ACCOUNTS_D       | ACCOUNT|
+|Dimension| W_XER_ASSETS_D         | ASSET<br>ASSET_TYPE |
+|Dimension| W_XER_CURRENCY_D       | Manually built |
+|Dimension| W_XER_CONTACTS_D      | CONTACTS<br>CONTACT_GROUP_MEMBER<br>CONTACT_GROUP|
+|Dimension| W_XER_DATE_D      | Manually built|
+|Dimension| W_XER_EMPLOYEES_D      | EMPLOYEE|
+|Dimension| W_XER_ITEMS_D      | ITEM|
+|Fact| W_XER_JOURNAL_F | ORDER<br>ORDER_LINE_ITEM<br>ORDER_LINE_ITEM_MODIFIER|
+|Fact| W_XER_PAYMENTS_F          | PAYMENT|
+|Fact| W_XER_INVOICES_F          | INVOICE<br>INVOICE_LINE_ITEM|
+|Fact| W_XER_PURCHASE_ORDERS_F          | PURCHASE_ORDER<br>PURCHASE_ORDER_LINE_ITEM|
+|Fact| W_XER_RECEIPTS_F          | RECEIPT<br>RECEIPT_LINE_ITEM|
 
 | ![0jSpD4G.png](https://i.imgur.com/0jSpD4G.png) | 
 |:--:| 
