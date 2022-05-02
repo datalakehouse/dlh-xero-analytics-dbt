@@ -10,4 +10,4 @@
 SELECT
   *
 FROM
-  {{ref('V_ITEM_STG')}} AS C
+  {{ref('V_XER_CONTACTS_STG')}} AS C

@@ -2,7 +2,7 @@ version: 2
 
 models:  
 
-  - name: W_ACCOUNTS_D
+  - name: W_XER_ACCOUNTS_D
     description: This is the acounts dimension table
     columns:
       - name: K_ACCOUNT_DLHK        
@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the account
-  - name: W_ASSETS_D
+  - name: W_XER_ASSETS_D
     description: This is the assets dimension table
     columns:
       - name: K_ASSET_DLHK        
@@ -18,7 +18,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the asset
-  - name: W_CONTACTS_D
+  - name: W_XER_CONTACTS_D
     description: This is the contacts dimension table
     columns:
       - name: K_CONTACT_DLHK        
@@ -26,7 +26,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the contact        
-  - name: W_DATE_D
+  - name: W_XER_DATE_D
     description: This is the date dimension table
     columns:
       - name: K_DATE_BK        
@@ -34,7 +34,7 @@ models:
           - unique
           - not_null
         description: Date Key
-  - name: W_EMPLOYEES_D
+  - name: W_XER_EMPLOYEES_D
     description: This is the employees dimension table
     columns:
       - name: K_EMPLOYEE_DLHK        
@@ -42,7 +42,7 @@ models:
           - unique
           - not_null
         description: DataLakeHouse key of the employee
-  - name: W_INVOICES_F
+  - name: W_XER_INVOICES_F
     description: This is the invoices fact table
     columns:
       - name: K_INVOICE_LINE_DLHK        
@@ -54,22 +54,22 @@ models:
       - name: K_ACCOUNT_DLHK        
         tests:
           - relationships:
-              to: ref('W_ACCOUNTS_D')
+              to: ref('W_XER_ACCOUNTS_D')
               field: K_ACCOUNT_DLHK                
 
       - name: K_ITEM_DLHK        
         tests:
           - relationships:
-              to: ref('W_ITEMS_D')
+              to: ref('W_XER_ITEMS_D')
               field: K_ITEM_DLHK        
       
       - name: K_CONTACT_DLHK        
         tests:
           - relationships:
-              to: ref('W_CONTACTS_D')
+              to: ref('W_XER_CONTACTS_D')
               field: K_CONTACT_DLHK
 
-  - name: W_ITEMS_D
+  - name: W_XER_ITEMS_D
     description: This is the items dimension table
     columns:
       - name: K_ITEM_DLHK        
@@ -78,7 +78,7 @@ models:
           - not_null
         description: DataLakeHouse key of the item          
   
-  - name: W_JOURNAL_F
+  - name: W_XER_JOURNAL_F
     description: This is the journal fact table
     columns:
       - name: K_JOURNAL_LINE_DLHK        
@@ -90,11 +90,11 @@ models:
       - name: K_ACCOUNT_DLHK        
         tests:
           - relationships:
-              to: ref('W_ACCOUNTS_D')
+              to: ref('W_XER_ACCOUNTS_D')
               field: K_ACCOUNT_DLHK                
 
 
-  - name: W_PAYMENTS_F
+  - name: W_XER_PAYMENTS_F
     description: This is the payments fact table
     columns:
       - name: K_PAYMENT_DLHK        
@@ -107,11 +107,11 @@ models:
       - name: K_ACCOUNT_DLHK        
         tests:
           - relationships:
-              to: ref('W_ACCOUNTS_D')
+              to: ref('W_XER_ACCOUNTS_D')
               field: K_ACCOUNT_DLHK                
 
    
-  - name: W_PURCHASE_ORDERS_F
+  - name: W_XER_PURCHASE_ORDERS_F
     description: This is the purchase orders fact table
     columns:
       - name: K_PURCHASE_LINE_ITEM_DLHK        
@@ -124,22 +124,22 @@ models:
       - name: K_ACCOUNT_DLHK        
         tests:
           - relationships:
-              to: ref('W_ACCOUNTS_D')
+              to: ref('W_XER_ACCOUNTS_D')
               field: K_ACCOUNT_DLHK                
 
       - name: K_ITEM_DLHK        
         tests:
           - relationships:
-              to: ref('W_ITEMS_D')
+              to: ref('W_XER_ITEMS_D')
               field: K_ITEM_DLHK        
       
       - name: K_CONTACT_DLHK        
         tests:
           - relationships:
-              to: ref('W_CONTACTS_D')
+              to: ref('W_XER_CONTACTS_D')
               field: K_CONTACT_DLHK
 
-  - name: W_RECEIPTS_F
+  - name: W_XER_RECEIPTS_F
     description: This is the receipts fact table
     columns:
       - name: K_RECEIPT_LINE_DLHK        
@@ -152,17 +152,17 @@ models:
       - name: K_ACCOUNT_DLHK        
         tests:
           - relationships:
-              to: ref('W_ACCOUNTS_D')
+              to: ref('W_XER_ACCOUNTS_D')
               field: K_ACCOUNT_DLHK                
 
       - name: K_ITEM_DLHK        
         tests:
           - relationships:
-              to: ref('W_ITEMS_D')
+              to: ref('W_XER_ITEMS_D')
               field: K_ITEM_DLHK        
       
       - name: K_CONTACT_DLHK        
         tests:
           - relationships:
-              to: ref('W_CONTACTS_D')
+              to: ref('W_XER_CONTACTS_D')
               field: K_CONTACT_DLHK

@@ -15,7 +15,7 @@ contact AS (
   SELECT 
   * 
   FROM  	
-    {{ref('W_CONTACTS_D')}}
+    {{ref('W_XER_CONTACTS_D')}}
 ),
 rename AS (
 SELECT

@@ -9,13 +9,13 @@ WITH PURCHASE_HEADER AS (
   SELECT 
   * 
   FROM  	
-    {{ref('V_PURCHASE_ORDER_HEADER_STG')}}
+    {{ref('V_XER_PURCHASE_ORDER_HEADER_STG')}}
 ),
 PURCHASE_LINE AS (
   SELECT
   *
   FROM
-    {{ref('V_PURCHASE_ORDER_LINE_STG')}}
+    {{ref('V_XER_PURCHASE_ORDER_LINE_STG')}}
 ),
 rename AS 
 (  

@@ -15,7 +15,7 @@ account AS (
   SELECT 
   * 
   FROM  	
-    {{ref('W_ACCOUNTS_D')}}
+    {{ref('W_XER_ACCOUNTS_D')}}
 ),
 rename AS (
 SELECT

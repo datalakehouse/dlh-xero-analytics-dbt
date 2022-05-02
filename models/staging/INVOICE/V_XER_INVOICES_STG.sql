@@ -9,13 +9,13 @@ WITH INVOICE_HEADER AS (
   SELECT 
   * 
   FROM  	
-    {{ref('V_INVOICE_HEADER_STG')}}
+    {{ref('V_XER_INVOICE_HEADER_STG')}}
 ),
 INVOICE_LINE AS (
   SELECT
   *
   FROM
-    {{ref('V_INVOICE_LINE_STG')}}
+    {{ref('V_XER_INVOICE_LINE_STG')}}
 ),
 rename AS 
 (  

@@ -10,4 +10,4 @@
 SELECT
   *
 FROM
-  {{ref('V_RECEIPTS_STG')}} AS C
+  {{ref('V_XER_ACCOUNTS_STG')}} AS C

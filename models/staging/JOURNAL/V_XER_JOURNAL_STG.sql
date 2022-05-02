@@ -9,13 +9,13 @@ WITH JOURNAL_HEADER AS (
   SELECT 
   * 
   FROM  	
-    {{ref('V_JOURNAL_HEADER_STG')}}
+    {{ref('V_XER_JOURNAL_HEADER_STG')}}
 ),
 JOURNAL_LINE AS (
   SELECT
   *
   FROM
-    {{ref('V_JOURNAL_LINE_STG')}}
+    {{ref('V_XER_JOURNAL_LINE_STG')}}
 ),
 rename AS 
 (  

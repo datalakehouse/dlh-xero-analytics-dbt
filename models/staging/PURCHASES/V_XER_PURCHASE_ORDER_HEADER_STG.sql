@@ -15,13 +15,13 @@ contacts AS (
   SELECT
   *
   FROM
-    {{ref('W_CONTACTS_D')}}
+    {{ref('W_XER_CONTACTS_D')}}
 ),
 branding_theme AS (
   SELECT
   *
   FROM
-    {{ref('V_BRANDING_THEME_STG')}}
+    {{ref('V_XER_BRANDING_THEME_STG')}}
 ),
 rename AS 
 (  

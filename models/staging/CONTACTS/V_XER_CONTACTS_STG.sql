@@ -27,7 +27,7 @@ branding_theme AS (
   SELECT
   *
   FROM
-    {{ref('V_BRANDING_THEME_STG')}}
+    {{ref('V_XER_BRANDING_THEME_STG')}}
 ),
 rename AS 
 (  

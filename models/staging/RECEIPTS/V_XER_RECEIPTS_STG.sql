@@ -9,13 +9,13 @@ WITH RECEIPT_HEADER AS (
   SELECT 
   * 
   FROM  	
-    {{ref('V_RECEIPT_HEADER_STG')}}
+    {{ref('V_XER_RECEIPT_HEADER_STG')}}
 ),
 RECEIPT_LINE AS (
   SELECT
   *
   FROM
-    {{ref('V_RECEIPT_ITEM_STG')}}
+    {{ref('V_XER_RECEIPT_ITEM_STG')}}
 ),
 rename AS 
 (  
