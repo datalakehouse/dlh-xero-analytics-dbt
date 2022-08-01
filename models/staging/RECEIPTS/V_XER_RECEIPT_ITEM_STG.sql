@@ -1,6 +1,6 @@
 {{ config (
   materialized= 'view',
-  schema= var('target_schema'),
+  schema= var('target_schema', 'XERO'),
   tags= ["staging","daily"]
 )
 }}
@@ -9,7 +9,7 @@ WITH source AS (
   SELECT 
   * 
   FROM  	
-    {{source(var('source_schema'),'RECEIPT_LINE_ITEM')}}
+    {{source(var('source_schema', 'DEMO_XERO'),'RECEIPT_LINE_ITEM')}}
 ),
 contact AS (
   SELECT 
